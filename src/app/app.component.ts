@@ -53,3 +53,4 @@ export class Usuario {
     this.clave = '';
 
   }
+}
