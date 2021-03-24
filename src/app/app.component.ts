@@ -6,5 +6,50 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'clase01';
+  title = 'Clase01';
+  edadUno = '';
+  edadDos = '';
+  suma = 0;
+  prom = 0;
+ 
+
+HacerCambios()
+{
+  this.title = "Angular 2021";
 }
+
+SumarEdad()
+{
+  this.suma = parseInt(this.edadUno) + parseInt(this.edadDos);
+
+
+}
+
+PromedioEdad()
+{
+  this.prom = this.suma / 2;
+
+}
+
+Limpiar()
+{
+  this.edadUno = '';
+  this.edadDos = '';
+  this.suma = 0;
+  this.prom = 0;
+
+}
+
+
+}
+
+export class Usuario {
+
+  public nombre: string;
+  public clave: string;
+
+  public constructor() {
+    this.nombre = '';
+    this.clave = '';
+
+  }
